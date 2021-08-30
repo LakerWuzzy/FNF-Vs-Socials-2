@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="youtube_assets.png"><SubTexture name="youtube_assets down0000" x="0" y="0" width="279" height="188" frameX="0" frameY="0" frameWidth="279" frameHeight="188" />
+<SubTexture name="youtube_assets down0001" x="279" y="0" width="260" height="180" frameX="0" frameY="0" frameWidth="260" frameHeight="180" />
+<SubTexture name="youtube_assets down0002" x="539" y="0" width="261" height="173" frameX="0" frameY="0" frameWidth="261" frameHeight="173" />
+<SubTexture name="youtube_assets down0003" x="800" y="0" width="259" height="173" frameX="0" frameY="0" frameWidth="259" frameHeight="173" />
+<SubTexture name="youtube_assets idle0000" x="0" y="188" width="312" height="175" frameX="0" frameY="0" frameWidth="312" frameHeight="175" />
+<SubTexture name="youtube_assets idle0001" x="312" y="188" width="311" height="154" frameX="0" frameY="0" frameWidth="311" frameHeight="154" />
+<SubTexture name="youtube_assets idle0002" x="623" y="188" width="309" height="146" frameX="0" frameY="0" frameWidth="309" frameHeight="146" />
+<SubTexture name="youtube_assets left0000" x="932" y="188" width="283" height="172" frameX="0" frameY="0" frameWidth="283" frameHeight="172" />
+<SubTexture name="youtube_assets left0001" x="0" y="363" width="287" height="172" frameX="0" frameY="0" frameWidth="287" frameHeight="172" />
+<SubTexture name="youtube_assets left0002" x="287" y="363" width="292" height="172" frameX="0" frameY="0" frameWidth="292" frameHeight="172" />
+<SubTexture name="youtube_assets left0003" x="579" y="363" width="286" height="172" frameX="0" frameY="0" frameWidth="286" frameHeight="172" />
+<SubTexture name="youtube_assets right0000" x="865" y="363" width="261" height="177" frameX="0" frameY="0" frameWidth="261" frameHeight="177" />
+<SubTexture name="youtube_assets right0001" x="0" y="540" width="260" height="177" frameX="0" frameY="0" frameWidth="260" frameHeight="177" />
+<SubTexture name="youtube_assets right0002" x="260" y="540" width="256" height="177" frameX="0" frameY="0" frameWidth="256" frameHeight="177" />
+<SubTexture name="youtube_assets right0003" x="516" y="540" width="260" height="179" frameX="0" frameY="0" frameWidth="260" frameHeight="179" />
+<SubTexture name="youtube_assets up0000" x="776" y="540" width="261" height="215" frameX="0" frameY="0" frameWidth="261" frameHeight="215" />
+<SubTexture name="youtube_assets up0001" x="0" y="755" width="259" height="200" frameX="0" frameY="0" frameWidth="259" frameHeight="200" />
+<SubTexture name="youtube_assets up0002" x="259" y="755" width="253" height="174" frameX="0" frameY="0" frameWidth="253" frameHeight="174" />
+<SubTexture name="youtube_assets up0003" x="512" y="755" width="247" height="177" frameX="0" frameY="0" frameWidth="247" frameHeight="177" />
+</TextureAtlas>

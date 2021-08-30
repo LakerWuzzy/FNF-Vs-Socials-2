@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="google_assets.png"><SubTexture name="google_assets google_assets down0000" x="0" y="0" width="159" height="101" frameX="0" frameY="0" frameWidth="159" frameHeight="101" />
+<SubTexture name="google_assets google_assets down0001" x="159" y="0" width="158" height="101" frameX="0" frameY="0" frameWidth="158" frameHeight="101" />
+<SubTexture name="google_assets google_assets down0002" x="317" y="0" width="159" height="100" frameX="0" frameY="0" frameWidth="159" frameHeight="100" />
+<SubTexture name="google_assets google_assets down0003" x="476" y="0" width="161" height="101" frameX="0" frameY="0" frameWidth="161" frameHeight="101" />
+<SubTexture name="google_assets google_assets idle0000" x="0" y="101" width="290" height="212" frameX="0" frameY="0" frameWidth="290" frameHeight="212" />
+<SubTexture name="google_assets google_assets idle0001" x="290" y="101" width="288" height="203" frameX="0" frameY="0" frameWidth="288" frameHeight="203" />
+<SubTexture name="google_assets google_assets idle0002" x="578" y="101" width="287" height="199" frameX="0" frameY="0" frameWidth="287" frameHeight="199" />
+<SubTexture name="google_assets google_assets idle0003" x="865" y="101" width="285" height="203" frameX="0" frameY="0" frameWidth="285" frameHeight="203" />
+<SubTexture name="google_assets google_assets left0000" x="0" y="313" width="282" height="202" frameX="0" frameY="0" frameWidth="282" frameHeight="202" />
+<SubTexture name="google_assets google_assets left0001" x="282" y="313" width="275" height="202" frameX="0" frameY="0" frameWidth="275" frameHeight="202" />
+<SubTexture name="google_assets google_assets left0002" x="557" y="313" width="286" height="202" frameX="0" frameY="0" frameWidth="286" frameHeight="202" />
+<SubTexture name="google_assets google_assets left0003" x="843" y="313" width="286" height="202" frameX="0" frameY="0" frameWidth="286" frameHeight="202" />
+<SubTexture name="google_assets google_assets right0000" x="0" y="515" width="110" height="111" frameX="0" frameY="0" frameWidth="110" frameHeight="111" />
+<SubTexture name="google_assets google_assets right0001" x="110" y="515" width="214" height="213" frameX="0" frameY="0" frameWidth="214" frameHeight="213" />
+<SubTexture name="google_assets google_assets right0002" x="324" y="515" width="109" height="114" frameX="0" frameY="0" frameWidth="109" frameHeight="114" />
+<SubTexture name="google_assets google_assets right0003" x="433" y="515" width="115" height="123" frameX="0" frameY="0" frameWidth="115" frameHeight="123" />
+<SubTexture name="google_assets google_assets up0000" x="0" y="728" width="216" height="200" frameX="0" frameY="0" frameWidth="216" frameHeight="200" />
+<SubTexture name="google_assets google_assets up0001" x="216" y="728" width="216" height="202" frameX="0" frameY="0" frameWidth="216" frameHeight="202" />
+<SubTexture name="google_assets google_assets up0002" x="432" y="728" width="110" height="121" frameX="0" frameY="0" frameWidth="110" frameHeight="121" />
+<SubTexture name="google_assets google_assets up0003" x="542" y="728" width="213" height="208" frameX="0" frameY="0" frameWidth="213" frameHeight="208" />
+<SubTexture name="google_assets google_grrrr0000" x="0" y="936" width="285" height="212" frameX="0" frameY="0" frameWidth="285" frameHeight="212" />
+<SubTexture name="google_assets google_grrrr0001" x="285" y="936" width="289" height="212" frameX="0" frameY="0" frameWidth="289" frameHeight="212" />
+<SubTexture name="google_assets google_grrrr0002" x="574" y="936" width="258" height="213" frameX="0" frameY="0" frameWidth="258" frameHeight="213" />
+</TextureAtlas>

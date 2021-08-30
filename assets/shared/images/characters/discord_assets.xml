@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="discord_assets.png"><SubTexture name="discord_assets down0000" x="0" y="0" width="256" height="218" frameX="0" frameY="0" frameWidth="256" frameHeight="218" />
+<SubTexture name="discord_assets down0001" x="256" y="0" width="265" height="218" frameX="0" frameY="0" frameWidth="265" frameHeight="218" />
+<SubTexture name="discord_assets down0002" x="521" y="0" width="259" height="203" frameX="0" frameY="0" frameWidth="259" frameHeight="203" />
+<SubTexture name="discord_assets down0003" x="780" y="0" width="263" height="197" frameX="0" frameY="0" frameWidth="263" frameHeight="197" />
+<SubTexture name="discord_assets down0004" x="0" y="218" width="263" height="197" frameX="0" frameY="0" frameWidth="263" frameHeight="197" />
+<SubTexture name="discord_assets idle0000" x="263" y="218" width="280" height="168" frameX="0" frameY="0" frameWidth="280" frameHeight="168" />
+<SubTexture name="discord_assets idle0001" x="543" y="218" width="282" height="158" frameX="0" frameY="0" frameWidth="282" frameHeight="158" />
+<SubTexture name="discord_assets idle0002" x="825" y="218" width="284" height="151" frameX="0" frameY="0" frameWidth="284" frameHeight="151" />
+<SubTexture name="discord_assets idle0003" x="0" y="415" width="284" height="151" frameX="0" frameY="0" frameWidth="284" frameHeight="151" />
+<SubTexture name="discord_assets left0000" x="284" y="415" width="263" height="184" frameX="0" frameY="0" frameWidth="263" frameHeight="184" />
+<SubTexture name="discord_assets left0001" x="547" y="415" width="276" height="179" frameX="0" frameY="0" frameWidth="276" frameHeight="179" />
+<SubTexture name="discord_assets left0002" x="823" y="415" width="276" height="178" frameX="0" frameY="0" frameWidth="276" frameHeight="178" />
+<SubTexture name="discord_assets left0003" x="0" y="599" width="288" height="178" frameX="0" frameY="0" frameWidth="288" frameHeight="178" />
+<SubTexture name="discord_assets left0004" x="288" y="599" width="289" height="179" frameX="0" frameY="0" frameWidth="289" frameHeight="179" />
+<SubTexture name="discord_assets right0000" x="577" y="599" width="275" height="197" frameX="0" frameY="0" frameWidth="275" frameHeight="197" />
+<SubTexture name="discord_assets right0001" x="852" y="599" width="272" height="190" frameX="0" frameY="0" frameWidth="272" frameHeight="190" />
+<SubTexture name="discord_assets right0002" x="0" y="796" width="266" height="199" frameX="0" frameY="0" frameWidth="266" frameHeight="199" />
+<SubTexture name="discord_assets right0003" x="266" y="796" width="266" height="199" frameX="0" frameY="0" frameWidth="266" frameHeight="199" />
+<SubTexture name="discord_assets up0000" x="532" y="796" width="281" height="177" frameX="0" frameY="0" frameWidth="281" frameHeight="177" />
+<SubTexture name="discord_assets up0001" x="813" y="796" width="278" height="184" frameX="0" frameY="0" frameWidth="278" frameHeight="184" />
+<SubTexture name="discord_assets up0002" x="0" y="995" width="282" height="181" frameX="0" frameY="0" frameWidth="282" frameHeight="181" />
+<SubTexture name="discord_assets up0003" x="282" y="995" width="282" height="180" frameX="0" frameY="0" frameWidth="282" frameHeight="180" />
+</TextureAtlas>
