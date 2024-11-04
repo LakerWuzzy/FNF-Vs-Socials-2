@@ -113,6 +113,10 @@ class OptionsMenu extends MusicBeatState
 
 		FlxTween.tween(versionShit,{y: FlxG.height - 18},2,{ease: FlxEase.elasticInOut});
 		FlxTween.tween(blackBorder,{y: FlxG.height - 18},2, {ease: FlxEase.elasticInOut});
+		
+		#if mobile
+		addVirtualPad(LEFT_FULL, A_B_C);
+		#end
 
 		super.create();
 	}
@@ -166,6 +170,13 @@ class OptionsMenu extends MusicBeatState
 				changeSelection(-1);
 			if (FlxG.keys.justPressed.DOWN)
 				changeSelection(1);
+				
+			#if mobile
+			if (virtualPad.buttonC.justPressed) {
+			  removeVirtualPad();
+			  openSubState(new mobile.MobileControlsSubState());
+			}
+			#end
 			
 			if (isCat)
 			{
