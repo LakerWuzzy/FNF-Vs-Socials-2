@@ -145,21 +145,21 @@ class OptionsMenu extends MusicBeatState
 
 			if (gamepad != null)
 			{
-				if (gamepad.justPressed.DPAD_UP)
+				if (controls.UP)
 				{
 					FlxG.sound.play(Paths.sound('scrollMenu'));
 					changeSelection(-1);
 				}
-				if (gamepad.justPressed.DPAD_DOWN)
+				if (controls.DOWN)
 				{
 					FlxG.sound.play(Paths.sound('scrollMenu'));
 					changeSelection(1);
 				}
 			}
 			
-			if (controls.UP)
+			if (controls.UP_P)
 				changeSelection(-1);
-			if (controls.DOWN)
+			if (controls.DOWN_P)
 				changeSelection(1);
 				
 			#if mobile

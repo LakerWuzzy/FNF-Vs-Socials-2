@@ -216,11 +216,11 @@ class StoryMenuState extends MusicBeatState
 
 				if (gamepad != null)
 				{
-					if (gamepad.justPressed.DPAD_UP)
+					if (controls.UP)
 					{
 						changeWeek(-1);
 					}
-					if (gamepad.justPressed.DPAD_DOWN)
+					if (controls.DOWN)
 					{
 						changeWeek(1);
 					}
@@ -244,12 +244,12 @@ class StoryMenuState extends MusicBeatState
 					}
 				}
 
-				if (controls.UP)
+				if (controls.UP_P)
 				{
 					changeWeek(-1);
 				}
 
-				if (controls.DOWN)
+				if (controls.DOWN_P)
 				{
 					changeWeek(1);
 				}
