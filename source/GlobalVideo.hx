@@ -1,5 +1,6 @@
-package video;
+package;
 
+import video.*;
 import openfl.Lib;
 
 class GlobalVideo
