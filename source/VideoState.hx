@@ -1,4 +1,4 @@
-package;
+package video;
 
 import flixel.FlxState;
 import flixel.FlxG;
@@ -32,21 +32,13 @@ class VideoState extends MusicBeatState
 	public var defaultText:String = "";
 	public var doShit:Bool = false;
 	public var pauseText:String = "Press P To Pause/Unpause";
-	public var autoPause:Bool = false;
-	public var musicPaused:Bool = false;
 
-	public function new(source:String, toTrans:FlxState, frameSkipLimit:Int = -1, autopause:Bool = false)
+	public function new(source:String, toTrans:FlxState)
 	{
 		super();
 		
-		autoPause = autopause;
-		
 		leSource = source;
 		transClass = toTrans;
-		if (frameSkipLimit != -1 && GlobalVideo.isWebm)
-		{
-			GlobalVideo.getWebm().webm.SKIP_STEP_LIMIT = frameSkipLimit;	
-		}
 	}
 	
 	override function create()
@@ -57,7 +49,13 @@ class VideoState extends MusicBeatState
 		
 		if (GlobalVideo.isWebm)
 		{
+			
+		#if MODS_ALLOWED	
+		videoFrames = Std.parseInt(sys.io.File.getContent(leSource.replace(".webm", ".txt")));
+		#else
 		videoFrames = Std.parseInt(Assets.getText(leSource.replace(".webm", ".txt")));
+		#end
+			
 		}
 		
 		fuckingVolume = FlxG.sound.music.volume;
@@ -121,12 +119,6 @@ class VideoState extends MusicBeatState
 				doShit = true;
 			//}, 1);
 		//}
-		
-		if (autoPause && FlxG.sound.music != null && FlxG.sound.music.playing)
-		{
-			musicPaused = true;
-			FlxG.sound.music.pause();
-		}
 	}
 	
 	override function update(elapsed:Float)
@@ -209,11 +201,6 @@ class VideoState extends MusicBeatState
 			notDone = false;
 			FlxG.sound.music.volume = fuckingVolume;
 			txt.text = pauseText;
-			if (musicPaused)
-			{
-				musicPaused = false;
-				FlxG.sound.music.resume();
-			}
 			FlxG.autoPause = true;
 			FlxG.switchState(transClass);
 		}
