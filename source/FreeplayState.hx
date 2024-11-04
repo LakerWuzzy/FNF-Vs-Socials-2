@@ -189,27 +189,27 @@ class FreeplayState extends MusicBeatState
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
 		comboText.text = combo + '\n';
 
-		var upP = FlxG.keys.justPressed.UP;
-		var downP = FlxG.keys.justPressed.DOWN;
+		var upP = controls.UP;
+		var downP = controls.DOWN;
 		var accepted = controls.ACCEPT;
 
 		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
 
 		if (gamepad != null)
 		{
-			if (controls.UP)
+			if (gamepad.justPressed.DPAD_UP)
 			{
 				changeSelection(-1);
 			}
-			if (controls.DOWN)
+			if (gamepad.justPressed.DPAD_DOWN)
 			{
 				changeSelection(1);
 			}
-			if (controls.LEFT)
+			if (gamepad.justPressed.DPAD_LEFT)
 			{
 				changeDiff(-1);
 			}
-			if (controls.RIGHT)
+			if (gamepad.justPressed.DPAD_RIGHT)
 			{
 				changeDiff(1);
 			}
@@ -224,9 +224,9 @@ class FreeplayState extends MusicBeatState
 			changeSelection(1);
 		}
 
-		if (FlxG.keys.justPressed.LEFT)
+		if (controls.LEFT)
 			changeDiff(-1);
-		if (FlxG.keys.justPressed.RIGHT)
+		if (controls.RIGHT)
 			changeDiff(1);
 
 		if (controls.BACK)
