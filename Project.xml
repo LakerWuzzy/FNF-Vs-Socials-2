@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': Kade Engine" file="Kade Engine" packageName="com.kadedev.kadeengine" package="com.kadedev.kadeengine" main="Main" version="0.2.7.1" company="kadedev" />
+	<app title="FNF': Socials" file="DGL Engine" packageName="com.gabodev.dglengine" package="com.gabodev.dglengine" main="Main" version="0.2.7.1" company="kadedev" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -27,7 +27,7 @@
 	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" vsync="false"/>
 
 	<!--Mobile-specific-->
-	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" resizable="false"/>
+	<window if="mobile" orientation="landscape" fullscreen="true" width="1280" height="720" resizable="false"/>
 
 	<!--Switch-specific-->
 	<window if="switch" orientation="landscape" fullscreen="true" width="0" height="0" resizable="true" />
@@ -39,6 +39,8 @@
 	<set name="BUILD_DIR" value="export/32bit" if="32bit" />
 
 	<classpath name="source" />
+	
+	<assets path="mobile" rename="assets/mobile" if="mobile" /> <!-- to not have the mobile assets in another builds -saw -->
 
 	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
 	<assets path="assets/preload" rename="assets" exclude="*.mp3" unless="web"/>
@@ -50,45 +52,18 @@
 	<section if="PRELOAD_ALL">
 		<library name="songs"    preload="true" />
 		<library name="shared"   preload="true" />
-		<library name="tutorial" preload="true" />
-		<library name="week1"    preload="true" />
-		<library name="week2"    preload="true" />
-		<library name="week3"    preload="true" />
-		<library name="week4"    preload="true" />
-		<library name="week5"    preload="true" />
-		<library name="week6"    preload="true" />
 	</section>
 	
 	<section if="NO_PRELOAD_ALL">
 		<library name="songs"    preload="false" />
 		<library name="shared"   preload="false" />
 		<library name="tutorial" preload="false" />
-		<library name="week1"    preload="false" />
-		<library name="week2"    preload="false" />
-		<library name="week3"    preload="false" />
-		<library name="week4"    preload="false" />
-		<library name="week5"    preload="false" />
-		<library name="week6"    preload="false" />
 	</section>
 	
 	<assets path="assets/songs"    library="songs"    exclude="*.ogg" if="web"/>
 	<assets path="assets/songs"    library="songs"    exclude="*.mp3" unless="web"/>
 	<assets path="assets/shared"   library="shared"   exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"   library="shared"   exclude="*.mp3" unless="web"/>
-	<assets path="assets/tutorial" library="tutorial" exclude="*.ogg" if="web"/>
-	<assets path="assets/tutorial" library="tutorial" exclude="*.mp3" unless="web"/>
-	<assets path="assets/week1"    library="week1"    exclude="*.ogg" if="web"/>
-	<assets path="assets/week1"    library="week1"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/week2"    library="week2"    exclude="*.ogg" if="web"/>
-	<assets path="assets/week2"    library="week2"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/week3"    library="week3"    exclude="*.ogg" if="web"/>
-	<assets path="assets/week3"    library="week3"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/week4"    library="week4"    exclude="*.ogg" if="web"/>
-	<assets path="assets/week4"    library="week4"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/week5"    library="week5"    exclude="*.ogg" if="web"/>
-	<assets path="assets/week5"    library="week5"    exclude="*.mp3" unless="web"/>
-	<assets path="assets/week6"    library="week6"    exclude="*.ogg" if="web"/>
-	<assets path="assets/week6"    library="week6"    exclude="*.mp3" unless="web"/>
 	
 	<assets path='example_mods' rename='mods' embed='false'/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
@@ -164,6 +139,22 @@
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 
 	<!-- _________________________________ Custom _______________________________ -->
+		
+	<!--Always enable Null Object Reference check-->
+	<haxedef name="HXCPP_CHECK_POINTER" />
+	<haxedef name="HXCPP_STACK_LINE" />
+	<haxedef name="HXCPP_STACK_TRACE" />
+
+	<section if="android">
+		<!--Target SDK-->
+		<config:android target-sdk-version="29" if="${lime <= 8.0.0}" />
+	</section>
+
+	<section if="ios">
+		<!--Dependency--> 
+		<dependency name="Metal.framework" />
+		<dependency name="WebKit.framework" />
+	</section>
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
 	
