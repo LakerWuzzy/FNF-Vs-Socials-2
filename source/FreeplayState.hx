@@ -194,27 +194,6 @@ class FreeplayState extends MusicBeatState
 		var accepted = controls.ACCEPT;
 
 		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
-
-		if (gamepad != null)
-		{
-			if (controls.UP)
-			{
-				changeSelection(-1);
-			}
-			if (controls.DOWN)
-			{
-				changeSelection(1);
-			}
-			if (gamepad.justPressed.DPAD_LEFT)
-			{
-				changeDiff(-1);
-			}
-			if (gamepad.justPressed.DPAD_RIGHT)
-			{
-				changeDiff(1);
-			}
-		}
-
 		if (upP)
 		{
 			changeSelection(-1);
@@ -224,9 +203,9 @@ class FreeplayState extends MusicBeatState
 			changeSelection(1);
 		}
 
-		if (controls.LEFT)
+		if (controls.LEFT_P)
 			changeDiff(-1);
-		if (controls.RIGHT)
+		if (controls.RIGHT_P)
 			changeDiff(1);
 
 		if (controls.BACK)
